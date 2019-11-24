@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)) ,url(/images/background.jpg) no-repeat center fixed; 
+	background-size: cover;
+    color: white;
+}
+
+.navbar{
+    background: rgba(2, 2, 2, 0.2);
+    padding: 10px 40px;
+}
+.logo img{
+    height: 70px;
+    width:70px;
+    border-radius:50%;
+    float: left;
+    cursor: pointer;
+}
+.navlinks{
+    float: right;
+}
+.navlinks ul{
+    list-style: none;
+}
+.navlinks ul li{
+    display: inline-block;
+    margin-left:25px;
+    margin-top: 10px;
+    padding:13px 18px;
+    transition: all ease-in-out 300ms;
+    position: relative;
+}
+.navlinks li:hover{
+    background: rgba(128, 128, 128, 0.616);
+}
+ul a{
+    transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+.navlinks li::after{
+    content: '';
+    display: block;
+    height: 4px;
+    background: aqua;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 0%;
+    transition: all ease-in-out 300ms;
+
+}
+.navlinks li:hover::after{
+    width: 100%;
+}
+.me{
+    display: flex;
+    width: 100%;
+}
+.me p{
+    height: 500px;
+    width: 600px;
+    padding: 20px 0px 0px 10px;
+}
+.me .name{
+    padding: 30px 0px;
+    color: aqua;
+    font-weight: 200;
+}
+.me img{
+    height: 500px;
+    width: 500px;
+}
+.myprojects{
+    margin: 10px 30px;
+}
+.project{
+    float: left;
+    width: 300px;
+    padding: 10px 10px 10px 0px;
+}
+.footer{
+    color:white;
+    background: rgba(14, 68, 83, 0.4);
+    height: 300px;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    
+
+}
+.footer-bottom{
+    text-align: center;
+    bottom: 0;
+    padding: 10px 0px;
+    position: absolute;
+    width: 100%;
+    background: rgba(6, 11, 14, 0.4);
+
+}	
+
+.fcontent{
+    display: flex;
+    
+}
+.fsection{
+    padding: 30px;
+    flex:1;
+    border-right: 2px solid aqua;
+}
+.fsection .contact span{
+    display: block;
+    font-size: 16px;
+    margin: 10px 0px;
+
+}
+.fsection .socials a{
+    border:1px solid grey;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.5s;
+    
+}
+.fsection .socials a:hover{
+    border:1px solid white;
+    color:aqua;
+    transition: all 0.5s;
+}
+.fsection h2{
+    padding: 5px;
+}
+.fsection ul li a{
+    display: block;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    width: 100px;
+}
+.fsection ul li a:hover{
+    color: aqua;
+    margin-left:20px;
+    transition: all 0.5s ease;
+}
+.fsection input, textarea{
+    background: rgba(31, 21, 21, 0.555);
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    line-height: 30px;
+    font-size: 16px;
+    width: 100%;
+    padding: 5px 8px;
+    color: white;
+}
+.fsection button{
+    border: none;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 16px; 
+    background-color: rgba(0,136,169,1);
+    border-radius: 50px;
+    transition: all 0.5s ease;
+}
+.fsection button:hover{
+    background-color: rgba(0,136,169,0.7);
+    transition: all 0.5s ease;
+
+}
+
+
+
