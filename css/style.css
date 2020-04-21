@@ -59,6 +59,7 @@ ul a{
 }
 .aboutme{
     padding:40px 100px;
+    text-align:center;
 
 }  
 .meheading{
@@ -79,14 +80,22 @@ ul a{
     margin-bottom: 10px;
     width: 400px;
 }
+.meparagraphlink a{
+    color:  rgb(8, 255, 255);
+    text-decoration: none;
+}
 .mecontent{
     display: flex;
 }
 .meparagraph, .meimage{
     flex: 1;
 }
-.memore{
-    text-align: justify;
+.memore p{
+    font-size: 20px;
+    margin: 20px;
+}
+.memore h2{
+    font-size: 24px;
 }
 .meimage img{
     margin-left:300px;
@@ -138,10 +147,10 @@ ul a{
 }
 .abouts{
     float: left;
-    width: 320px;
+    width: 355px;
     height: 160px;
-    padding: 20px;
-    margin: 10px 0px 10px 7px;
+   padding: 25px;
+    margin: 10px 0px 10px 80px;
     border-right:2px solid aqua;
 }
 .about h3{
@@ -178,14 +187,15 @@ ul a{
 }
 .fsection .contact span{
     display: block;
-    font-size: 16px;
+    font-size: 18px;
     margin: 10px 0px;
 
 }
 .fsection .socials a{
-    border:1px solid grey;
+    border:1px solid white;
+    color:white;
     padding: 5px;
-    margin-right: 10px;
+    margin-right: 20px;
     text-align: center;
     border-radius: 10px;
     transition: all 0.5s;
@@ -193,7 +203,7 @@ ul a{
 }
 .fsection .socials a:hover{
     border:1px solid white;
-    color:aqua;
+    color:white;
     transition: all 0.5s;
 }
 .fsection h2{
