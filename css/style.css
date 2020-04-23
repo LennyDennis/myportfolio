@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 .main{
     background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)) ,url(../images/background.jpg) no-repeat center fixed; 
 	background-size: cover;
     color: white;
-    height: 600px;
+    height: 100vh;
 }
 .navbar{
     background: rgba(66, 69, 70, 0.11);
@@ -16,7 +18,7 @@
 .logo img{
     height: 70px;
     width:70px;
-    border-radius:50%;
+    border-radius:30%;
     float: left;
     cursor: pointer;
 }
@@ -57,59 +59,98 @@ ul a{
 .navlinks li:hover::after{
     width: 100%;
 }
-.aboutme{
-    padding:40px 100px;
+.introduction{
+    padding:70px 100px 40px 100px;
     text-align:center;
+    height: 100vh;
 
 }  
-.meheading{
+.introduction h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+.name{
+    color: rgb(8, 255, 255);
+}
+.introparagraph{
+    margin: 10px 200px;
+}
+.introcontent{
+    display: flex;
+}
+.introparagraph, .introimage{
+    flex: 1;
+}
+.intromore p{
+    font-size: 20px;
+    margin: 20px;
+}
+.intromore h2{
+    font-size: 24px;
+}
+.introimage img{
+    margin-left:200px;
+    width: 450px;
+    height: 450px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.aboutpage{
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)) ,url(../images/bg1.jpg) no-repeat center fixed; 
+	background-size: cover;
+}
+.theabout{
+    text-align: center;
+    height: 40vh;
+    padding: 50px 300px ;
+    color: white;
+}
+.theabout h2{
+    color: aqua;
+}
+.aboutparagraph{
+    margin: 20px;
+    font-size: 18px;
+}
+.contactlink a{
+    color:  rgb(8, 255, 255);
+    text-decoration: none;
+}
+/* .meheading{
     text-align: center;
     font-size: 30px;
     margin-bottom: 10px;
     text-transform: uppercase;
     color: rgb(8, 255, 255);
+} */
+.skill{
+    padding: 5px 20px;
+    height: 60vh;
+    color: white;
 }
-.name{
-    color: rgb(8, 255, 255);
+.skill h2{
+    text-align: center;
+    padding-bottom: 10px;
+    color: aqua;
 }
-.aboutme h2{
-    font-size: 20px;
+.skills{
+    float: left;
+    width: 355px;
+    height: 270px;
+    padding: 10px;
+    margin: 10px 0px 10px 80px;
+    border-right:2px solid aqua;
+}
+.skillimage img{
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
     margin-bottom: 10px;
-}
-.meparagraph{
-    margin-bottom: 10px;
-    width: 400px;
-}
-.meparagraphlink a{
-    color:  rgb(8, 255, 255);
-    text-decoration: none;
-}
-.mecontent{
-    display: flex;
-}
-.meparagraph, .meimage{
-    flex: 1;
-}
-.memore p{
-    font-size: 20px;
-    margin: 20px;
-}
-.memore h2{
-    font-size: 24px;
-}
-.meimage img{
-    margin-left:300px;
-    width: 300px;
-    border-radius: 30%;
-    cursor: pointer;
-}
-.test{
-    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)) ,url(../images/bg1.jpg) no-repeat center fixed; 
-	background-size: cover;
+
 }
 .myprojects{
-    height: 350px;
-    
+    height: auto; 
 }
 .myprojects h2{
     text-align: center;
@@ -123,36 +164,28 @@ ul a{
 .theprojects{
     display: flex;
 }
+.project-img img{
+    width: auto;
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+.mobile img{
+    width: 100px;
+}
 .project{
     background: white;
     flex: 1;
-    padding: 30px;
-    margin: 20px 20px 10px 20px;
+    padding: 10px;
+    margin: 20px 10px 20px 10px;
     border-radius: 15px;
-    height: 280px;
+    height: auto;
     text-align: justify;
 }
 .project p{
     padding-top: 10px;
 }
-.about{
-    margin: 5px 20px;
-    height: 250px;
-    color: white;
-}
-.about h2{
-    text-align: center;
-    padding-bottom: 10px;
 
-}
-.abouts{
-    float: left;
-    width: 355px;
-    height: 160px;
-   padding: 25px;
-    margin: 10px 0px 10px 80px;
-    border-right:2px solid aqua;
-}
 .about h3{
     padding-bottom: 10px;
 }
